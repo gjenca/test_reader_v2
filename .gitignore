@@ -1,3 +1,4 @@
+reader.py
 *.dvi
 *.pdf
 *.bbl
