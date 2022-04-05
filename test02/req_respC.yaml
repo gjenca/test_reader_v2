@@ -1,0 +1,11 @@
+---
+method: READ
+headers:
+ File: "a.txt"
+ From: "blah"
+ To: "10"
+content: ""
+---
+status: 200
+headers: {}
+content: ""

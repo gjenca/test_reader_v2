@@ -1,0 +1,9 @@
+---
+method: LENGTH
+headers:
+  File: "nonexistent.txt"
+content: ""
+---
+status: 202
+headers: {}
+content: ""

@@ -1,0 +1,11 @@
+---
+method: READ
+headers:
+ File: "nonexistent.txt"
+ From: "0"
+ To: "2"
+content: ""
+---
+status: 202 
+headers: {}
+content: ""

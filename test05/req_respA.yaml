@@ -1,0 +1,12 @@
+---
+method: LENGTH
+headers:
+  File: "a.txt"
+content: ""
+---
+status: 100
+headers:
+  Lines: "1"
+content: |
+  3
+

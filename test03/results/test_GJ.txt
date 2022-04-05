@@ -1,0 +1,28 @@
+==================
+>>> Filename:req_respA.yaml
+---
+C->S: 'READ\n'
+C->S: 'File:nonexistent.txt\n'
+C->S: 'From:0\n'
+C->S: 'To:2\n'
+C->S: '\n'
+---
+>>> End request, awaiting response
+S->C: '202 No such file\n'
+S->C: '\n'
+---
+>>> Got expected response, OK
+==================
+>>> Filename:req_respB.yaml
+---
+C->S: 'READ\n'
+C->S: 'File:a.txt\n'
+C->S: 'From:0\n'
+C->S: 'To:2\n'
+C->S: '\n'
+---
+>>> End request, awaiting response
+S->C: '203 Read error\n'
+S->C: '\n'
+---
+>>> Got expected response, OK
