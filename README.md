@@ -17,4 +17,4 @@
 
 ## Čo robiť ak niečo nejde
 
-Ak Vám to testovanie nejde, ozvite sa mi a zistíme, kde je problém.
+Ak Vám to testovanie nejde, ozvite sa mi buď emailom alebo napíšte issue do tohto projektu na githube zistíme, kde je problém.
