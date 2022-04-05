@@ -1,4 +1,7 @@
 reader.py
+test??/results/*
+source/*
+results.html
 *.dvi
 *.pdf
 *.bbl
