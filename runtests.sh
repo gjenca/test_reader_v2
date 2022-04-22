@@ -2,8 +2,11 @@
 # vim: et ts=4 sw=4 sta ai
 
 PATTERN='.'
-if [ -n "$1" ] ; then
-PATTERN="$1"
+
+WHICH=""
+if [ -n "$1" ]
+then
+    WHICH="_$1"
 fi
 
 ./getsource.sh
@@ -43,7 +46,7 @@ for TEST in $TESTS; do
     mkdir $TEST/results
 done
 echo '</tr>'
-./riesenia.sh 2>/dev/null | grep "$PATTERN" |
+./riesenia"$WHICH".sh 2>/dev/null | grep "$PATTERN" |
 while IFS=: read RIESENIE NAME ; do
     if [ "$NAME" == "" ]
     then
