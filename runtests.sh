@@ -9,7 +9,7 @@ then
     WHICH="_$1"
 fi
 
-./getsource.sh
+./getsource.sh "$WHICH"
 (
 cat << THEEND
 <!DOCTYPE html>

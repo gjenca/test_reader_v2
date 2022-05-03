@@ -1,13 +1,15 @@
 #!/bin/bash
 # vim: et ts=4 sw=4 sta ai
 
+WHICH="$1"
+
 if ! command -v pygmentize >/dev/null
 then
     exit 0
 fi
 echo '>>> Converting source code'
 mkdir -p source
-./riesenia.sh $@ |
+./riesenia"$WHICH".sh $@ |
 while IFS=: read RIESENIE NAME ; do
     if [ "$NAME" == "" ]
     then
