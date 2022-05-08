@@ -1,0 +1,15 @@
+---
+method: READ
+headers:
+ From: "0"
+ File: "a.txt"
+ To: "2"
+content: ""
+---
+status: 100
+headers:
+  Lines: "2"
+content: |
+  Line 1 ahoj
+  Line 2 dovi
+

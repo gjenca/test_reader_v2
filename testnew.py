@@ -199,7 +199,10 @@ for req_resp_fnm in sorted(glob.glob('req_resp*.yaml')):
             print_and_flush('>>> Got response:',response_real)
             print_and_flush('>>> Expected:',response_expect)
             print_and_flush('>>> Exitting test')
+            s.close()
             sys.exit(1)
         else:
             print_and_flush('>>> Got expected response, OK')
+s.close()
+sys.exit(0)
     
